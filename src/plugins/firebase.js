@@ -13,3 +13,6 @@ const firebaseConfig = {
 }
 
 firebase.initializeApp(firebaseConfig)
+
+export const messaging = firebase.messaging()
+messaging.usePublicVapidKey(process.env.VUE_APP_FIREBASE_MESSAGING_PUBLIC_VAPID_KEY)
